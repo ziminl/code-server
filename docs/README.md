@@ -8,11 +8,13 @@ sudo dpkg -i code-server_3.4.1_amd64.deb
 
 code-server --install-extension ms-vscode.cpptools ms-vscode.cpptools formulahendry.terminal hookyqr.beautify
 
+sudo ufw allow 8080
+
+echo "export PASSWORD='p455w0rd'" >> ~/.bashrc
+
 #cat ~/.config/code-server/config.yaml
 
 #cat ~/.bashrc
-
-sudo ufw allow 8080
 
 code-server --host 0.0.0.0 --port 8080
 
