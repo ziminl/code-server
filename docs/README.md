@@ -1,11 +1,11 @@
 ```bash
 sudo apt-get install build-essential net-tools
 
-wget -q https://github.com/cdr/code-server/releases/download/3.4.1/code-server_3.4.1_amd64.deb
-
+#code-server_4.96.4_amd64.deb
+wget -q https://github.com/coder/code-server/releases/download/v4.96.4/code-server_4.96.4_amd64.deb
 #https://github.com/cdr/code-server/releases/download/
 
-sudo dpkg -i code-server_3.4.1_amd64.deb
+sudo dpkg -i code-server_4.96.4_amd64.deb
 
 code-server --install-extension ms-vscode.cpptools ms-vscode.cpptools formulahendry.terminal hookyqr.beautify
 
